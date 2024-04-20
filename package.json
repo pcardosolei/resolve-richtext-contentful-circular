@@ -23,17 +23,5 @@
   "homepage": "https://github.com/pcardosolei/resolve-richtext-contentful-circular#readme",
   "dependencies": {
     "@contentful/rich-text-types": "^16.3.5"
-  },
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./lib/esm/types/index.d.ts",
-        "default": "./lib/esm/index.mjs"
-      },
-      "require": {
-        "types": "./lib/cjs/types/index.d.ts",
-        "default": "./lib/cjs/index.js"
-      }
-    }
-  },
+  }
 }

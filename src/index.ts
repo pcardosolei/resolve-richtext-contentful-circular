@@ -1,1 +1,1 @@
-export { cleanupRichTextDocument } from "./cleanup";
+export { cleanupRichTextDocument } from './cleanup'
