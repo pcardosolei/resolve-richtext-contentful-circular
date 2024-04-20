@@ -1,6 +1,6 @@
 {
   "name": "resolve-richtext-contentful-circular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fixing the circular richtext json loop",
   "main": "index.ts",
   "scripts": {
@@ -23,5 +23,6 @@
   "homepage": "https://github.com/pcardosolei/resolve-richtext-contentful-circular#readme",
   "dependencies": {
     "@contentful/rich-text-types": "^16.3.5"
-  }
+  },
+  "types": "dist/index.d.ts"
 }

@@ -14,7 +14,7 @@ import {
  * @param maxLevel
  * @returns
  */
-export const cleanupRichTextDocument = (node: Document, maxLevel: number) => {
+export const cleanupRichTextDocument = (node: Document, maxLevel: number): Document => {
   const content = node.content
   content?.map((info: TopLevelBlock) => checkLevel(info, 0, maxLevel))
 
@@ -27,7 +27,7 @@ export const cleanupRichTextDocument = (node: Document, maxLevel: number) => {
  * @returns
  */
 
-const cleanupLevel = (node: Block | Inline | Text) => {
+const cleanupLevel = (node: Block | Inline | Text): Block | Inline | Text => {
   switch (node.nodeType) {
     case BLOCKS.EMBEDDED_ENTRY:
     case INLINES.EMBEDDED_ENTRY:
@@ -52,7 +52,11 @@ const cleanupLevel = (node: Block | Inline | Text) => {
  * @returns
  */
 
-const checkLevel = (node: Block | Inline | Text, level: number, maxLevel: number) => {
+const checkLevel = (
+  node: Block | Inline | Text,
+  level: number,
+  maxLevel: number
+): Block | Inline | Text => {
   const nextLevel = ++level
   if (level > maxLevel) return cleanupLevel(node)
 
