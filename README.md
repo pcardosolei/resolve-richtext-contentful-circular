@@ -1,0 +1,1 @@
+# resolve-richtext-contentful-circular
