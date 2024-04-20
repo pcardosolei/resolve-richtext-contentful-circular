@@ -14,7 +14,7 @@ import {
  * @param maxLevel
  * @returns
  */
-export const cleanupRichTextDocument = (node: Document, maxLevel: number): Document => {
+export const cleanupRichTextDocument = (node: Document, maxLevel: number): any => {
   const content = node.content
   content?.map((info: TopLevelBlock) => checkLevel(info, 0, maxLevel))
 
